@@ -28,7 +28,7 @@ Exporting a SAS single 60k string to mySQL and reading it back into two 30k stri
 
             %let longString=%sysfunc(repeat(0000000000,2999))%sysfunc(repeat(1111111111,2999));
             proc sql;
-               connect to mysql ( user=root password="sas28rlx" database=sakila);
+               connect to mysql ( user=root password="xxxxx" dabase=sakila);
                execute (drop table longstring)  by mysql;
                execute (
                    create
