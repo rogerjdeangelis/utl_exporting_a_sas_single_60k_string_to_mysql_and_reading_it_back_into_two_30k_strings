@@ -50,7 +50,7 @@ Exporting a SAS single 60k string to mySQL and reading it back into two 30k stri
          * Prove that string is 60k.
            Note you cannot use proc contents because it truncates snd shows length at 1024k;
 
-         libname mysqllib mysql user=root password="sas28rlx" database=sakila;
+         libname mysqllib mysql user=root password="xxxxxxxx" database=sakila;
          proc print data=mysqllib.longstring;
          var len;
          run;quit;
@@ -65,7 +65,7 @@ Exporting a SAS single 60k string to mySQL and reading it back into two 30k stri
         ==============================
 
           proc sql;
-             connect to mysql ( user=root password="sas28rlx" database=sakila);
+             connect to mysql ( user=root password="xxxxxxxx" database=sakila);
              create
                 table want as
              select
